@@ -1,0 +1,213 @@
+.catalog{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.productCard{
+	width: 30%;
+	border: 2px solid #777;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	&-photo{
+		height: 450px;
+		width: 100%; 
+	}
+	&-name{
+		font-size: 30px;
+	}
+	&-price{
+		font-size: 20px;
+	}
+}
+
+
+// кнопка для показа товаров
+
+$green: #777;
+$transition: top .3s ease-in-out;
+
+.show-more {
+	display: block;
+	border: 2px solid $green;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.arrows {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+}
+
+.show-more-button  {
+
+
+margin-top: 20px;
+	display: block;
+	text-decoration: none;
+	color: $green;
+	text-align: center;
+
+	&:hover {
+
+		.arrow {
+			top: 70px;
+			transition: $transition;
+		}
+		
+
+		
+		.arrow-hidden {
+			top: 12px;
+			transition: $transition;
+		}
+	}
+
+	.arrow, .arrow-hidden {
+		width: 2px;
+		height:25px;
+		background: $green;
+		display: inline-block;
+		position: absolute;
+		top: 12px;
+		left: 24px;
+		
+		transition: $transition;
+
+		&:before {
+			content: "";
+			width: 1.5px;
+			height:15px;
+			display: block;
+			background: $green;
+			position: absolute;
+			transform: rotate(45deg);
+			bottom: 0;
+			right: -5px;
+			bottom: -1.5px;
+		}
+
+		&:after {
+			content: "";
+			width: 1.5px;
+			height:15px;
+			display: block;
+			background: $green;
+			position: absolute;
+			transform: rotate(135deg);
+			bottom: -2px;
+			left: -5px;
+		}
+		
+		
+	}
+	.arrow-hidden {
+			top: -80px;
+
+		}
+}
+
+.show-more-text {
+	margin-top: 10px;
+	display: block;
+	font-weight: 600;
+}
+
+
+
+// кнопки для сщртировки по возрастанию и убыванию цен
+
+
+
+
+// * {
+//     font-family: 'Roboto', sans-serif;
+//   }
+//   .container {
+//     position: absolute;
+//     top:50%;
+//     left:50%;
+//     margin-left: -65px;
+//     margin-top: -20px;
+//     width: 130px;
+//     height: 40px;
+//     text-align: center;
+//   }
+//   .button {
+//     outline:none;
+//     height: 40px;
+//     text-align: center;
+//     width: 130px;
+//     border-radius:40px;
+//     background: #fff;
+//     border: 2px solid $green;
+//     color:$green;
+//     letter-spacing:1px;
+//     text-shadow:0;
+//     .font{
+//       size:12px;
+//     //   weight: bold;
+//     }
+//     cursor: pointer;
+//     transition: all 0.25s ease;
+//     &:hover {
+//       color:white;
+//       background: $green;
+//     }
+//     &:active {
+//       //letter-spacing: 2px;
+//       letter-spacing: 2px ;
+//     }
+//     &:after {
+//       content:"SUBMIT";
+//     }
+//   }
+//   .onclic {
+//     width: 40px;
+//     border-color:$gray;
+//     border-width:3px;
+//     font-size:0;
+//     border-left-color:$green;
+//     animation: rotating 2s 0.25s linear infinite;
+  
+//     &:after {
+//       content:"";
+//     }
+//     &:hover {
+//       color:$green;
+//       background: white;
+//     }
+//   }
+//   .validate {
+//     font-size:13px;
+//     color: white;
+//     background: $green;
+//     &:after {
+//       font-family:'FontAwesome';
+//       content:"\f00c";
+//     }
+//   }
+  
+//   @keyframes rotating {
+//     from {
+//       transform: rotate(0deg);
+//     }
+//     to {
+//       transform: rotate(360deg);
+//     }
+//   }
