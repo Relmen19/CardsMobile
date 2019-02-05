@@ -15,6 +15,7 @@
                     <img src='{$this->photo}' class='productCard-photo'>
                     <p class='productCard-name' id='name'>{$this->name}</p>
                     <div class='productCard-price'>Цена: {$this->formatPrice()}</div>
+                    <div class='productCard-buyButton'>перейти к описанию товара</div>
                 </div>
             ";
         }

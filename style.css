@@ -1,3 +1,7 @@
+body {
+  background-color: #33353b;
+}
+
 .catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,7 +16,7 @@
 
 .productCard {
   width: 30%;
-  border: 2px solid #777;
+  border: 2px solid #9b9a9a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,11 +33,22 @@
   text-align: center;
   padding: 10px;
   border-radius: 10px;
+  background-color: #50515d;
 }
 
 .productCard-photo {
+  border-radius: 10px;
+  background-color: #fff;
   height: 450px;
   width: 100%;
+  position: relative;
+}
+
+.productCard-photo-after {
+  content: "";
+  position: absolute;
+  background: url(images/tag1.png) center/cover no-repeat;
+  padding: 20px;
 }
 
 .productCard-name {
@@ -46,7 +61,7 @@
 
 .show-more {
   display: block;
-  border: 2px solid #777;
+  border: 2px solid #9b9a9a;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -70,7 +85,7 @@
   margin-top: 20px;
   display: block;
   text-decoration: none;
-  color: #777;
+  color: #9b9a9a;
   text-align: center;
 }
 
@@ -89,7 +104,7 @@
 .show-more-button .arrow, .show-more-button .arrow-hidden {
   width: 2px;
   height: 25px;
-  background: #777;
+  background: #9b9a9a;
   display: inline-block;
   position: absolute;
   top: 12px;
@@ -103,7 +118,7 @@
   width: 1.5px;
   height: 15px;
   display: block;
-  background: #777;
+  background: #9b9a9a;
   position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -117,7 +132,7 @@
   width: 1.5px;
   height: 15px;
   display: block;
-  background: #777;
+  background: #9b9a9a;
   position: absolute;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);

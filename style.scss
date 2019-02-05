@@ -1,3 +1,11 @@
+$green: rgb(155, 154, 154);
+$transition: top .3s ease-in-out;
+
+body{
+	background-color: #33353b;
+}
+
+
 .catalog{
 	display: flex;
 	justify-content: space-between;
@@ -5,7 +13,7 @@
 }
 .productCard{
 	width: 30%;
-	border: 2px solid #777;
+	border: 2px solid $green;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -13,9 +21,20 @@
 	text-align: center;
 	padding: 10px;
 	border-radius: 10px;
+	background-color: #50515d;
 	&-photo{
+		border-radius: 10px;
+		background-color: #fff;
 		height: 450px;
 		width: 100%; 
+		position: relative;
+		&-after{
+			content: "";
+			position: absolute;
+			background: url(images/tag1.png) center / cover no-repeat;
+			padding: 20px;
+			
+		}
 	}
 	&-name{
 		font-size: 30px;
@@ -23,13 +42,14 @@
 	&-price{
 		font-size: 20px;
 	}
+	// &-buyButton{
+
+	// }
 }
 
 
 // кнопка для показа товаров
 
-$green: #777;
-$transition: top .3s ease-in-out;
 
 .show-more {
 	display: block;
