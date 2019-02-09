@@ -16,7 +16,7 @@ body {
 
 .productCard {
   width: 30%;
-  border: 2px solid #9b9a9a;
+  border: 2px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,17 +31,17 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 10px;
   border-radius: 10px;
   background-color: #50515d;
 }
 
 .productCard-photo {
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   background-color: #fff;
   height: 450px;
   width: 100%;
   position: relative;
+  padding: -10px;
 }
 
 .productCard-photo-after {
